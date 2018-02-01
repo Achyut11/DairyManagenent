@@ -12,7 +12,6 @@ class CustomerList  extends Component {
   }
 
   handleChange = (event,value) => {
-    debugger
     event.preventDefault()
     this.setState({
       defaultCustomer: value,
@@ -22,7 +21,6 @@ class CustomerList  extends Component {
   }
 
   render(){
-    debugger
     return(
       <SelectField value={this.state.defaultCustomer} hintText="Customer List"	onChange={this.handleChange}>
         <MenuItem value={0} label="Ram" primaryText="Ram" name="Ram"/>
